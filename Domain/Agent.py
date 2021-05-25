@@ -32,7 +32,7 @@ class AgentRepositoryImpl(AgentRepository):
         self.observation_space = self.environment.observation_space
         self.action_space_size = self.environment.action_space.n
         #self.observation_space_size = self.environment.observation_space.n
-        self.observation_space_size = ( 6 , 12 )
+        self.observation_space_size = (6, 12)
         # INIT Q-TABLE
         self.q_table = np.zeros((self.observation_space_size, self.action_space_size))
         self.q_table = Network(hidden_neurons)
