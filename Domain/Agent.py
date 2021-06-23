@@ -42,8 +42,8 @@ class AgentRepositoryImpl(AgentRepository):
         # INIT Q-TABLE
         #self.q_table = Network(hidden_neurons)
         # INIT AGENT PARAMETERS
-        self.learning_rate = 0.7  # Learning rate
-        self.discount_rate = 0.618  # Discounting rate
+        self.learning_rate = 0.001  # Learning rate
+        self.discount_rate = 0.99  # Discounting rate
         self.exploration_rate = 1.0  # Exploration rate
         self.max_exploration_rate = 1.0  # Exploration probability at start
         self.min_exploration_rate = 0.01  # Minimum exploration probability
